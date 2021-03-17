@@ -2,7 +2,7 @@
 
 # https://www.digitalocean.com/community/tutorials/openssl-essentials-working-with-ssl-certificates-private-keys-and-csrs
 
-pwd="$(cd "$(dirname "${BASH_SOURCE[0]}")" >/dev/null 2>&1 && pwd)"
+pwd=`readlink -f $(dirname $0)`
 
 . $pwd/env.sh
 

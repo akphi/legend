@@ -1,10 +1,6 @@
 #!/bin/bash
 
-if [ $SCRIPT_ENV == "mac" ]; then
-  pwd="$(cd "$(dirname "${BASH_SOURCE[0]}")" >/dev/null 2>&1 && pwd)"
-else
-  pwd=$(readlink -f $(dirname $0))
-fi
+pwd=`readlink -f $(dirname $0)`
 
 . $pwd/env.sh
 

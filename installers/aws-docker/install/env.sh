@@ -1,13 +1,12 @@
 #!/bin/bash
 
-pwd="$(cd "$(dirname "${BASH_SOURCE[0]}")" >/dev/null 2>&1 && pwd)"
+pwd=`readlink -f $(dirname $0)`
 
 ##########################################
 ## Fill in these values (OPTIONAL)
 ##########################################
 
-# USER_WORK_DIR= # TODO: if not available, use the default values below
-# USER_TRUSTSTORE_PASSWORD= # TODO: right now the value is `changeit`, and hard-coded in other scripts
+SCRIPT_ENV=ec2
 
 ##########################################
 # The values below are computed/static
@@ -27,9 +26,6 @@ mkdir -p $CONTAINER_WORK_DIR
 if [ $SCRIPT_ENV == "ec2" ]; then
 	HOST_DNS_NAME=$(curl -s http://169.254.169.254/latest/meta-data/public-hostname)
 	HOST_PUBLIC_IP=$(curl -s http://169.254.169.254/latest/meta-data/public-ipv4)
-elif [ $SCRIPT_ENV == "mac" ]; then
-	HOST_DNS_NAME="localhost" # Check your Network in Mac
-	HOST_PUBLIC_IP=$(curl --silent https://ifconfig.me)
 else
 	HOST_DNS_NAME=$(hostname)
 	HOST_PUBLIC_IP=$(hostname -i)
