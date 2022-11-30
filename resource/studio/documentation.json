@@ -231,23 +231,72 @@
       "title": "How do I specify a supertype of a class?",
       "url": "https://legend.finos.org/docs/tutorials/studio-tutorial#add-a-super-type"
     },
+    "question.how-to-create-a-service": {
+      "title": "How do I create a Service?",
+      "related": [
+        "question.how-to-edit-a-service-url",
+        "question.how-to-add-owners-to-service",
+        "question.how-to-edit-a-service-query",
+        "question.how-to-write-a-service-test"
+      ],
+      "url": "https://legend.finos.org/docs/tutorials/studio-tutorial#create-a-service"
+    },
+    "question.how-to-edit-a-service-url": {
+      "title": "How do I edit my Service URL?",
+      "url": "https://legend.finos.org/docs/tutorials/studio-tutorial#general-tab"
+    },
+    "question.how-to-add-owners-to-service": {
+      "title": "How do I add owners to my Service?",
+      "url": "https://legend.finos.org/docs/tutorials/studio-tutorial#execution-tab"
+    },
+    "question.how-to-edit-a-service-query": {
+      "title": "How do I edit my Service Query?",
+      "url": "https://legend.finos.org/docs/tutorials/studio-tutorial#create-a-service-test"
+    },
     "question.how-to-write-a-service-test": {
       "title": "How do I specify a service test?",
       "url": "https://legend.finos.org/docs/tutorials/studio-tutorial#create-a-service-test"
     },
+    "question.how-to-write-test-data": {
+      "title": "How do I create test data?",
+      "url": "https://legend.finos.org/docs/tutorials/studio-tutorial#create-test-data"
+    },
+    "question.how-to-write-service-connection-test-data": {
+      "title": "How do I specify service connection test data?",
+      "related": [
+        "question.how-to-write-a-service-test"
+      ],
+      "url": "https://legend.finos.org/docs/tutorials/studio-tutorial#create-connection-test-data"
+    },
     "question.how-to-write-a-service-test-with-parameters": {
       "title": "How do I specify a service test with parameters?",
-      "related": ["question.how-to-write-a-service-test"],
+      "related": [
+        "question.how-to-write-a-service-test"
+      ],
       "url": "https://legend.finos.org/docs/tutorials/studio-tutorial#with-parameters"
     },
     "question.how-to-write-a-service-test-with-data-element": {
       "title": "How do I use data element in service test?",
-      "related": ["question.how-to-write-a-service-test"],
+      "related": [
+        "question.how-to-write-a-service-test"
+      ],
       "url": "https://legend.finos.org/docs/tutorials/studio-tutorial#with-data-element"
+    },
+    "question.how-to-create-a-data-element": {
+      "title": "How do I create a data element?",
+      "url": "https://legend.finos.org/docs/tutorials/studio-tutorial#create-a-data-element"
     },
     "question.how-to-write-a-service-multi-execution": {
       "title": "How do I specify a service with multi executions?",
       "url": "https://legend.finos.org/docs/tutorials/studio-tutorial#create-a-multi-execution-service"
+    },
+    "question.how-to-add-parameters-to-query": {
+      "title": "How do I add parameters to my Query?",
+      "url": "https://legend.finos.org/docs/tutorials/query-tutorial#parameters"
+    },
+    "question.how-to-add-constants-to-query": {
+      "title": "How do I add constants to my Query?",
+      "url": "https://legend.finos.org/docs/tutorials/query-tutorial#constants"
     },
     "context.class-editor": {
       "related": [
@@ -256,6 +305,19 @@
         "question.how-to-define-a-class-derivation",
         "question.how-to-define-a-class-constraint",
         "question.how-to-specify-a-class-supertype"
+      ]
+    },
+    "context.service-editor.test": {
+      "related": [
+        "question.how-to-write-a-service-test",
+        "question.how-to-write-a-service-test-with-parameters",
+        "question.how-to-write-a-service-test-with-data-element",
+        "question.how-to-write-service-connection-test-data"
+      ]
+    },
+    "context.data-element-editor": {
+      "related": [
+        "question.how-to-create-a-data-element"
       ]
     },
     "dsl-text.grammar.parser": {
